@@ -5,12 +5,14 @@ script looks for users who have authed with AD and haven't logged in for more th
 a year. They are potential candidates for cleanup.
 
 ## Install
-```virtualenv venv
-source venv/bin/activate
-pip install -r requirements.txt
+```
+pipenv install
 ```
 
 ## Usage
 Export `BB_HOST`, `BB_USER`, `BB_PASSWORD` as environment variables.
 
-```python cleanup.py```
+```
+pipenv shell
+python cleanup.py
+```
